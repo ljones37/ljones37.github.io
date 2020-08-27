@@ -10,3 +10,4 @@ artifacts/
 .vscode/
 .dotnet/
 *.binlog
+*.sln
