@@ -1,13 +1,13 @@
 ﻿@page "/lincoln-leaf"
 @inherits Portfolio.Data.ProjectBase
 @using Portfolio.Data
-<h3>Lincoln Leaf</h3>
+<h3>@Name</h3>
 
 @code {
-        public override string Name => "Linoln Leaf";
-        public override string Url => "/lincoln-leaf";
-        public override string IconicImagePath => throw new NotImplementedException();
-        public override Data.Area ProjectAreas => Portfolio.Data.Area.ENVIRONMENTAL;
-        public override Data.Context ProjectContexts => Context.SCHOOL;
-        public override Data.Skill ProjectSkills => Skill.MODELLING2D | Skill.DATAANALYSIS | Skill.PLANTS | Skill.PRESENTATION;
+    public override string Name => "Linoln Leaf";
+    public override string Url => "/lincoln-leaf";
+    public override string IconicImagePath => throw new NotImplementedException();
+    public override Data.Area ProjectAreas => Portfolio.Data.Area.ENVIRONMENTAL;
+    public override Data.Context ProjectContexts => Context.SCHOOL;
+    public override Data.Skill ProjectSkills => Skill.MODELLING2D | Skill.DATAANALYSIS | Skill.PLANTS | Skill.COMMUNICATION;
 }

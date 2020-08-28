@@ -4,15 +4,20 @@
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
-<div id="projects">
+@*<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Counter IncAmt="10" />*@
+
+<div id="projects" class="container">
     @foreach (ProjectBase project in projects)
     {
+    <div class="col-md-3">
         <a href="@project.Url">@project.Name</a>
+    </div>
     }
 </div>
 
 
 @code {
-    List<ProjectBase> projects = new List<ProjectBase> { new LincolnLeaf() };
+    List<ProjectBase> projects = new List<ProjectBase> { new LincolnLeaf(), new CRMTool() };
 }

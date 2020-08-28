@@ -1,0 +1,13 @@
+﻿@page "/crm-tool"
+@inherits Portfolio.Data.ProjectBase
+@using Portfolio.Data
+<h3>@Name</h3>
+
+@code {
+    public override string Name => "Internal CRM Program";
+    public override string Url => "/crm-tool";
+    public override string IconicImagePath => throw new NotImplementedException();
+    public override Area ProjectAreas => Area.PROGRAMMING;
+    public override Context ProjectContexts => Context.WORK;
+    public override Skill ProjectSkills => Skill.DOTNET | Skill.JAVASCRIPT | Skill.HTML | Skill.CSS | Skill.COMMUNICATION | Skill.LEADERSHIP;
+}

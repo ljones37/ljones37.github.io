@@ -31,7 +31,7 @@ namespace Portfolio.Data
     [Flags]
     public enum Area
     {
-        SOFTWARE,
+        PROGRAMMING,
         DESIGN,
         ENVIRONMENTAL
     }
@@ -51,6 +51,7 @@ namespace Portfolio.Data
         MODELLING2D = 256,
         DATAANALYSIS = 512,
         PLANTS = 1024,
-        PRESENTATION = 2048
+        COMMUNICATION = 2048,
+        LEADERSHIP = 4096
     }
 }
