@@ -9,12 +9,14 @@ Welcome to your new app.
 <Counter IncAmt="10" />*@
 
 <div id="projects" class="container">
-    @foreach (ProjectBase project in projects)
-    {
-    <div class="col-md-3">
-        <a href="@project.Url">@project.Name</a>
+    <div class="row">
+        @foreach (ProjectBase project in projects)
+        {
+            <div class="col-md-4">
+                <a href="@project.Url">@project.Name</a>
+            </div>
+        }
     </div>
-    }
 </div>
 
 
